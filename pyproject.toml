@@ -1,0 +1,18 @@
+[project]
+name = "chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.120.4",
+    "flask>=3.1.2",
+    "openai>=2.6.1",
+    "pillow>=11.3.0",
+    "pydantic-ai[examples]>=1.9.1",
+    "pymupdf>=1.26.5",
+    "python-dotenv>=1.2.1",
+    "python-multipart>=0.0.20",
+    "uvicorn>=0.38.0",
+    "websockets>=15.0.1",
+]
