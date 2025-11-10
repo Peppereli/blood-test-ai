@@ -287,7 +287,7 @@ async def websocket_endpoint(websocket: WebSocket):
 
     await websocket.accept()
     
-    chat_history = [{"role": "system", "content": "If the user provides a blood test image or PDF, convert the results into a json file and provide general, non-medical and medical advice. Don't respond to anything not blood test related. Keep it short. Be helpful."}]
+    chat_history = [{"role": "system", "content": "If the user provides a blood test screenshot or PDF, convert the results into a json file and provide general, non-medical and medical advice. Don't respond to anything not blood test related. Keep it short. Be helpful."}]
 
     try:
         while True:
