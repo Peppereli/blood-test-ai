@@ -139,7 +139,7 @@ html_content = """
         const sendButton = document.getElementById('send-btn');
         // A simple way to generate a session ID for a simple example
         const SESSION_ID = 'session-' + Date.now(); 
-        const ws = new WebSocket("ws://localhost:8000/ws?session_id=" + SESSION_ID);
+        const ws = new WebSocket("`${window.location.protocol === "https:" ? "wss" : "ws"}://${window.location.host}/ws?session_id=${session_id}"` + SESSION_ID);
 
         let currentBotMessageElement = null;
         let uploadedFileData = null; // Stores info about the last uploaded file for the next prompt
